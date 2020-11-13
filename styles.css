@@ -18,7 +18,7 @@ section{
     max-width: 500px;
     height: auto;
     border: none;
-    margin: 0 auto;
+    margin: 20px auto;
     margin-bottom: 15px;
     padding: 50px 20px;
     box-shadow: 0 10px 15px rgba(0,0,0,.15);
@@ -35,8 +35,6 @@ section{
 
 .col-sm-6:nth-child(1) .card,
 .col-sm-6:nth-child(1) .card .title .fas{
-
-
     background: linear-gradient(-45deg, #f403d1, #645bf6);
     -webkit-border-radius: 15px 15px 15px 15px;
     border-radius: 15px 15px 15px 15px;
@@ -61,6 +59,13 @@ section{
 .col-sm-6:nth-child(4) .card,
 .col-sm-6:nth-child(4) .card .title .fas{
     background: linear-gradient(-45deg, #24ff72, #9a4eff);
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.col-sm-12:nth-child(5) .card,
+.col-sm-12:nth-child(5) .card .title .fas{
+    background: linear-gradient(-45deg, #ffec61, #f321d7);
     -webkit-border-radius: 15px 15px 15px 15px;
     border-radius: 15px 15px 15px 15px;
 }
