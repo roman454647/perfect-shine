@@ -1,196 +1,167 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Price Card UI Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+        .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+        .fa-anchor,.fa-coffee {font-size:200px}
+    </style>
+    <script src="main.js"></script>
+</head>
+<body>
+<!-- Header -->
 
-header {
-    text-align: center;
-}
+<header style="padding:128px 16px">
+    <h1>Ідеальний Блиск</h1>
+</header>
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif !important;
-}
+<section>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="glisser">
+                        <div class="card text-center">
+                            <div class="title">
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                                <h2>Basique</h2>
+                            </div>
+                            <div class="price">
+                                <h4><sup>€</sup>25</h4>
+                            </div>
+                            <div class="option">
+                                <ul>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>8 Go d'espace</li>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>2 noms de domaines</li>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>10 adresses mail</li>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>Support live</li>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>Support live</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-section{
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    padding: 50px 0 20px 0;;
-    background-image: url("images/background.jpg");
-    background-position: center;
-}
 
-.card{
-    position: relative;
-    max-width: 500px;
-    height: 550px;
-    border: none;
-    margin: 20px auto;
-    margin-bottom: 15px;
-    padding: 50px 20px;
-    box-shadow: 0 10px 15px rgba(0,0,0,.15);
-    transition: 5s;
-    overflow: hidden;
-    transform: scale(1);
-    transition: all .35s;
-}
+                <div class="col-sm-6">
+                    <div class="card text-center">
+                        <div class="title">
+                            <i class="fas fa-building" aria-hidden="true"></i>
+                            <h2>Standard</h2>
+                        </div>
+                        <div class="price">
+                            <h4><sup>€</sup>40</h4>
+                        </div>
+                        <div class="option">
+                            <ul>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>26 Go d'espace</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>5 noms de domaines</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>18 adresses mail</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>Support live</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-.card:hover{
-    transform: scale(1.05);
-    transition: all .35s;
-}
 
-.col-sm-6:nth-child(1) .card,
-.col-sm-6:nth-child(1) .card .title .fas{
-    background: linear-gradient(-45deg, #f403d1, #645bf6);
-    -webkit-border-radius: 15px 15px 15px 15px;
-    border-radius: 15px 15px 15px 15px;
-}
 
-.col-sm-6:nth-child(2) .card,
-.col-sm-6:nth-child(2) .card .title .fas{
-    background: linear-gradient(-45deg, #ffec61, #f321d7);
-    -webkit-border-radius: 15px 15px 15px 15px;
-    border-radius: 15px 15px 15px 15px;
-}
+                <div class="col-sm-6">
+                    <div class="card text-center">
+                        <div class="title">
+                            <div class="iconBox">
+                                <img src="images/hammer.svg"/>
+                            </div>
+                            <h2>Premium</h2>
+                        </div>
+                        <div class="price">
+                            <h4><sup>€</sup>75</h4>
+                        </div>
+                        <div class="option">
+                            <ul>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>70 Go d'espace</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>12 noms de domaines</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>Infinité d'adresses mail</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>Support live</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-.col-sm-6:nth-child(3) .card,
-.col-sm-6:nth-child(3) .card .title .fas{
-    background: linear-gradient(-45deg, #f403d1, #645bf6);
-    -webkit-border-radius: 15px 15px 15px 15px;
-    border-radius: 15px 15px 15px 15px;
-}
+                <div class="col-sm-6">
+                    <div class="glisser">
+                        <div class="card text-center">
+                            <div class="title">
+                                <i class="fas fa-couch" aria-hidden="true"></i>
+                                <h2>Basique</h2>
+                            </div>
+                            <div class="price">
+                                <h4><sup>€</sup>25</h4>
+                            </div>
+                            <div class="option">
+                                <ul>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>8 Go d'espace</li>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>2 noms de domaines</li>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>10 adresses mail</li>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>Support live</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-.col-sm-6:nth-child(4) .card,
-.col-sm-6:nth-child(4) .card .title .fas{
-    background: linear-gradient(-45deg, #ffec61, #f321d7);
-    -webkit-border-radius: 15px 15px 15px 15px;
-    border-radius: 15px 15px 15px 15px;
-}
+                <div class="col-sm-12">
+                    <div class="glisser">
+                        <div class="card text-center">
+                            <div class="title">
+                                <div class="iconBox">
+                                  <img src="images/window.svg"/>
+                                </div>
+                                <h2>Basique</h2>
+                            </div>
+                            <div class="price">
+                                <h4><sup>₴</sup>25</h4>
+                            </div>
+                            <div class="option">
+                                <ul>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>8 Go d'espace</li>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>2 noms de domaines</li>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>10 adresses mail</li>
+                                    <li><i class="fas fa-check" aria-hidden="true"></i>Support live</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-.col-sm-12:nth-child(5) .card,
-.col-sm-12:nth-child(5) .card .title .fas{
-    background: linear-gradient(-45deg, #f403d1, #645bf6);
-    -webkit-border-radius: 15px 15px 15px 15px;
-    border-radius: 15px 15px 15px 15px;
-}
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity whiteBack">
+    <div class="w3-xlarge w3-padding-32">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
 
-.card:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40%;
-    background: rgba(255, 255,255, .1);
-    z-index: 1;
-    transform: skewY(-5deg) scale(1.5);
-}
-
-.title .fas{
-    color: #fff;
-    font-size: 60px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%!important;
-    text-align: center;
-    line-height: 100px;
-    box-shadow: 0 10px 10px rgba(0,0,0,.15);
-}
-
-.title h2{
-    position: relative;
-    margin: 20px 0 0;
-    padding: 0;
-    color: #fff;
-    font-size: 28px;
-    z-index: 2;
-}
-
-.price{
-    position: relative;
-    z-index: 2;
-}
-
-.price h4{
-    margin: 0;
-    padding: 20px 0;
-    color: #fff;
-    font-size: 60px;
-}
-
-.option{
-    position: relative;
-    z-index: 2;
-}
-
-.option ul{
-    margin: 0;
-    padding: 0;
-}
-
-.option ul li{
-    margin: 0 0 10px;
-    padding: 0;
-    list-style: none;
-    color: #fff;
-    font-size: 16px;
-}
-
-.card a{
-    position: relative;
-    z-index: 2;
-    background: #fff;
-    color: slategray;
-    width: 150px;
-    height :40px;
-    line-height: 40px;
-    border-radius: 40px;
-    display: block;
-    text-align: center;
-    margin: 20px auto 0;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0,0,0,.15);
-    transform: scale(1);
-    transition: all .35s;
-}
-
-.card a:hover{
-    text-decoration: none;
-    transform: scale(1.05);
-    transition: all .35s;
-}
-
-.fa-plane{
-    transform: rotate(-45deg);
-}
-
-.fa-check{
-    padding-right: 10px;
-}
-
-.fa-times{
-    padding-right: 10px;
-}
-
-.whiteBack {
-    background-color: white;
-}
-
-img {
-    width: 65px;
-    heigh: 65px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 15px;
-    filter: invert(1);
-}
-
-.iconBox {
-    height: 100px;
-    width: 100px;
-    background: linear-gradient(-45deg, #f403d1, #645bf6);
-    border-radius: 50%;
-    display: inline-block;
-}
+</body>
+</html>
