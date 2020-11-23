@@ -1,7 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
+
 header {
+    background: linear-gradient(-45deg, #f403d1, #645bf6);
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.logoContainer .title {
+    color: white;
+    display: flex;
+    align-items: center;
     text-align: center;
+    padding-right: 10%;
+}
+
+.logo {
+    width: auto;
+    height: 450px;
+}
+
+@media screen and (max-width: 932px) {
+    .logoBlock {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logoContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logoContainer .title {
+        justify-content: center;
+        padding-right: 0;
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+        width: auto;
+        height: 300px;
+    }
+}
+
+header h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 60px;
 }
 
 body{
@@ -67,8 +119,22 @@ section{
     border-radius: 15px 15px 15px 15px;
 }
 
-.col-sm-12:nth-child(5) .card,
-.col-sm-12:nth-child(5) .card .title .fas{
+.col-sm-6:nth-child(5) .card,
+.col-sm-6:nth-child(5) .card .title .fas{
+    background: linear-gradient(-45deg, #f403d1, #645bf6);
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.col-sm-6:nth-child(6) .card,
+.col-sm-6:nth-child(6) .card .title .fas{
+    background: linear-gradient(-45deg, #ffec61, #f321d7);
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.col-sm-12:nth-child(7) .card,
+.col-sm-12:nth-child(7) .card .title .fas{
     background: linear-gradient(-45deg, #f403d1, #645bf6);
     -webkit-border-radius: 15px 15px 15px 15px;
     border-radius: 15px 15px 15px 15px;
@@ -177,7 +243,7 @@ section{
     background-color: white;
 }
 
-img {
+.icon{
     width: 65px;
     heigh: 65px;
     margin-left: auto;
@@ -191,6 +257,14 @@ img {
     height: 100px;
     width: 100px;
     background: linear-gradient(-45deg, #f403d1, #645bf6);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.iconBoxCarpet {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(-45deg, #ffec61, #f321d7);
     border-radius: 50%;
     display: inline-block;
 }
