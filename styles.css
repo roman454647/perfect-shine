@@ -34,7 +34,7 @@ header {
 
     .logoContainer {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .logoContainer .title {
