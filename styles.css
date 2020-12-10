@@ -24,6 +24,7 @@ header {
 .logo {
     width: auto;
     height: 450px;
+    margin-left: 10%;
 }
 
 @media screen and (max-width: 932px) {
@@ -40,6 +41,10 @@ header {
     .logoContainer .title {
         justify-content: center;
         padding-right: 0;
+    }
+    
+    .logo {
+         margin-left: 0;
     }
 
 }
